@@ -264,4 +264,22 @@
     font-size: 12px; /* Smaller font size for buttons */
     padding: 8px 12px; /* Adjust button padding */
   }
+
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+ 
+
+ .profile-btn, .logout-btn{
+    padding: 0.4rem 0.5rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+
 }
