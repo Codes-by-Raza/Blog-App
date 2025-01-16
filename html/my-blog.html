@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog Application</title>
+  <link rel="stylesheet" href="../css/my-blog.css">
+</head>
+<body onload="authChecking() ; getBlog()">
+  <header class="header">
+    <h1>Blogging App</h1>
+    <div class="header-buttons">
+      <a class="profile-btn" href="dashboard.html">Home</a>
+      <a class="profile-btn" href="profile.html">Profile</a>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+  </header>
+  <nav class="nav">
+    <div class="nav-item">
+      <h1>My Blogs</h1>
+    </div>
+  </nav>
+  <main class="main">
+    
+    <section class="blog-container">
+      <div class="blog-content">
+
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script type="module" src="../js/my-blog.js"></script>
+</html>

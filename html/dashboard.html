@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog Application</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body onload="authChecking() ; getBlog()">
+  <header class="header">
+    <h1>Blogging App</h1>
+    <div class="header-buttons">
+      <a class="profile-btn" href="dashboard.html">Home</a>
+      <a class="profile-btn" href="my-blog.html">My Blogs</a>
+      <a class="profile-btn" href="../html/profile.html">Profile</a>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+  </header>
+  <nav class="nav">
+   
+  </nav>
+  <main class="main">
+    <section class="blog-form">
+      <h2>Create a New Blog</h2>
+      <input type="text" id="title" placeholder="Enter Blog Title">
+      <textarea id="desc" placeholder="Enter Blog Description"></textarea>
+      <br>
+      <button class="checkbox-button">  
+      <input type="checkbox" id="checkbox" /> <h3>Private</h3>
+      </button>
+<br>
+      <button class="submit-btn" onclick="blogPost()">Post Blog</button>
+    </section>
+    <section class="blog-cards">
+      <div class="parent">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script type="module" src="../js/dashboard.js"></script>
+</html>

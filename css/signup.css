@@ -1,0 +1,129 @@
+/* Adjusted Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f3e5f5, #ce93d8);
+ font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Reduced Height for Create Container */
+  .create {
+    background: #ffffff;
+    padding: 1.5rem 2rem; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Adjusted width */
+  }
+  
+  /* Heading Styling */
+  .text-blue {
+    font-size: 1.8rem; /* Slightly smaller heading */
+    font-weight: 600;
+    color: #8e24aa;
+    margin-bottom: 0.8rem; /* Reduced margin */
+  }
+  
+  .text-gray {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #757575;
+    margin-bottom: 1rem; /* Reduced spacing */
+  }
+  
+  /* Form Styling */
+  .form fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  .mt-3 {
+    margin-top: 0.8rem; /* Reduced margin-top for compactness */
+  }
+  
+  /* Input Fields */
+  input[type="name"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 0.6rem; /* Reduced padding */
+    margin-bottom: 0.8rem; /* Reduced margin-bottom */
+    border: 1px solid #b39ddb;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Reduced font size */
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  /* Buttons */
+  button.login-but {
+    background: #8e24aa;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem; /* Reduced padding */
+    border-radius: 4px;
+    font-size: 0.9rem; /* Reduced font size */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.login-but:hover {
+    background: #1565c0;
+  }
+  
+  /* Links */
+  a {
+    font-size: 0.85rem; /* Reduced font size */
+    color: #8e24aa;
+    text-decoration: none;
+    margin-right: 0.5rem; /* Reduced margin-right */
+    display: inline-block;
+    transition: color 0.3s;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    display: inline-block;
+  }
+  
+  a:hover {
+    color: #1565c0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .create {
+      padding: 1rem 1.5rem; /* Further reduce padding on small screens */
+    }
+  
+    .text-blue {
+      font-size: 1.4rem;
+    }
+  
+    .text-gray {
+      font-size: 0.9rem;
+    }
+  
+    input[type="name"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"] {
+      font-size: 0.8rem;
+    }
+  
+    button.login-but {
+      font-size: 0.8rem;
+    }
+  }
+  

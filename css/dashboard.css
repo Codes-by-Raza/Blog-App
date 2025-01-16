@@ -1,0 +1,267 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #2d89e5;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .logout-btn {
+    background: #dc3545;
+    color: white;
+    border: 2px solid red;
+    padding: 0.4rem 0.5rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .logout-btn:hover {
+    background-color: red;
+  }
+
+
+  .checkbox-button {
+    display: flex; /* Align checkbox and text side by side */
+    align-items: center; /* Vertically center the items */
+    color: #007BFF; /* Text color */
+    padding: 6px 10px; /* Add padding inside the button */
+    cursor: pointer; /* Pointer cursor for clickability */
+    gap: 6px; /* Space between checkbox and text */
+  }
+  
+  .checkbox-button input[type="checkbox"] {
+    accent-color: #007BFF; /* Customize checkbox color */
+    margin: 0; /* Remove extra margins */
+  }
+  
+  .checkbox-button h3 {
+    margin: 0; /* Remove default margins */
+    font-size: 16px; /* Adjust font size */
+    font-weight: normal; /* Optional: Make the text weight normal */
+  }
+  
+  .checkbox-button:hover {
+    background-color: #e0f0ff; /* Lighter background on hover */
+  }
+  
+  
+  .profile-btn{
+    text-decoration: none;
+    background: white;
+    color: #2d89e5;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .profile-btn:hover {
+    background-color: #e6effa;
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+  .nav-item {
+    text-align: center;
+    color: #2d89e5;
+    border: 3px solid #2d89e5;
+    padding: 5px 13px;
+    border-radius: 10px;
+  }
+
+  
+  /* Main Section */
+  .main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+  
+  /* Blog Form */
+  .blog-form {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100%;
+    max-width: 400px;
+    height: 50vh;
+  }
+  .blog-form h2 {
+    margin-bottom: 1rem;
+    color: #2d89e5;
+  }
+  .blog-form input, .blog-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .blog-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  .submit-btn {
+    background-color: #2d89e5;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-btn:hover {
+    background-color: #1c5db1;
+  }
+  
+  /* Parent Container */
+.parent {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center;
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  max-width: 900px; /* Limit the width for better readability */
+  font-family: Arial, sans-serif;
+}
+
+/* Individual Blog Card */
+.blog {
+  background-color: snow; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Inner spacing */
+  width: 100%; /* Full width within parent */
+  max-width: 800px; /* Limit card width */
+  text-align: left; /* Align content to the left */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect for Blog Cards */
+.blog:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Blog Title Styling */
+.blog h2 {
+  font-size: 22px;
+  color: #007bff; /* Darker text for readability */
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #003f8c ; /* Blue underline */
+  padding-bottom: 5px; /* Space below the underline */
+}
+
+/* Blog Description */
+.blog h3 {
+  font-size: 18px;
+  color: #333; /* Slightly lighter color for the description */
+  margin-bottom: 15px;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Blog Privacy Status */
+.blog h4 {
+  font-size: 16px;
+  color: #777777; /* Light gray for less emphasis */
+  margin-bottom: 15px;
+}
+
+.status {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Red color for Private */
+.status.private {
+  color: #dc3545; /* Bootstrap's Red */
+}
+
+/* Green color for Public */
+.status.public {
+  color: #28a745; /* Bootstrap's Green */
+}
+
+/* Buttons */
+.dynamic-button {
+  display: inline-block;
+  background-color: #007bff; /* Primary blue */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px; /* Space between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Button Hover and Active States */
+.dynamic-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.dynamic-button:active {
+  transform: scale(0.98); /* Slight press effect */
+  background-color: #003f8c; /* Even darker blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .blog h2 {
+    font-size: 20px; /* Slightly smaller title */
+  }
+
+  .blog h3 {
+    font-size: 16px; /* Adjust description font size */
+  }
+
+  .dynamic-button {
+    font-size: 12px; /* Smaller font size for buttons */
+    padding: 8px 12px; /* Adjust button padding */
+  }
+}

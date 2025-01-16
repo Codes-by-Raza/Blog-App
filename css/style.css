@@ -1,0 +1,132 @@
+body, h1, h4, input, button, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f3e5f5, #ce93d8);
+}
+
+/* Login Container */
+.login {
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Heading Styling */
+.text-blue {
+  font-size: 2rem;
+  font-weight: 600;
+  color:  #8e24aa;
+  margin-bottom: 1rem;
+}
+
+.text-gray {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #757575;
+}
+
+/* Form Styling */
+.form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b0bec5;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #1976d2;
+}
+
+/* Buttons */
+button.login-but {
+  background:  #8e24aa;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.login-but:hover {
+  background: #1565c0;
+}
+
+/* Links */
+a{
+  font-size: 0.9rem;
+  color:  #8e24aa;
+  text-decoration: none;
+  margin-right: 1rem;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+p {
+  font-size: 0.9rem;
+  color: black;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+a:hover {
+  color: #1565c0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .login {
+    padding: 1.5rem 2rem;
+  }
+
+  .text-blue {
+    font-size: 1.5rem;
+  }
+
+  .text-gray {
+    font-size: 1rem;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 0.9rem;
+  }
+
+  button.login-but {
+    font-size: 0.9rem;
+  }
+}
