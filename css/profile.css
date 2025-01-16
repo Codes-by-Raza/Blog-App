@@ -123,7 +123,6 @@ body {
   background-color: #003f8c; /* Even darker blue on click */
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   .form div {
     padding: 15px; /* Reduce padding on smaller screens */
@@ -137,4 +136,21 @@ body {
     font-size: 12px; /* Adjust button size */
     padding: 6px 10px;
   }
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+ .profile-btn, .logout-btn{
+    padding: 0.4rem 0.5rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+
 }
